@@ -1,6 +1,6 @@
 class CohortsController < ApplicationController
     def index
-        puts "hi i am cohort"
+        @cohort = Cohort.all
     end
 
     def show
@@ -8,7 +8,7 @@ class CohortsController < ApplicationController
     end
 
     def create
-
+       
     end
 
     def new

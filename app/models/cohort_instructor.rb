@@ -1,0 +1,2 @@
+class CohortInstructor < ApplicationRecord
+end

@@ -6,7 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-Instructor.create(first_name: 'David', last_name: 'Patlut', age: 90, salary: 5000, highest_education: 'college', cohort_id: 1)
+Instructor.create(first_name: 'David', last_name: 'Patlut', age: 90, salary: 5000, highest_education: 'College', cohort_id: 1)
 Instructor.create(first_name: 'Orlando', last_name: 'Caraballo', age: 70, salary: 6000, highest_education: 'Masters', cohort_id: 2)
 Instructor.create(first_name: 'Bill', last_name: 'Keller', age: 50, salary: 3000, highest_education: 'PhD', cohort_id: 3)
 

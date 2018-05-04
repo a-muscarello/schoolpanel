@@ -1,6 +1,7 @@
 class CoursesController < ApplicationController
     def index
-        puts "hi i am courses"
+        @course = Course.all
+        render layout: false
     end
 
     def show
@@ -8,22 +9,25 @@ class CoursesController < ApplicationController
     end
 
     def create
-
+        @course = Course.new(course[:id])
     end
     
     def new
-
+        Course.new(course[:id])
     end
 
     def edit
-
+        @course = Course.find(params[:idß])
     end
 
     def update
-
+        @course = Course.find(params[:id])
+        @course.update(course)
+        redirect_to '/courses'
     end
 
     def delete
-
+        Course.find(params[:id]).destroy
+        redirect_to '/courses'
     end
 end

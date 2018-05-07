@@ -27,8 +27,9 @@ class InstructorsController < ApplicationController
         redirect_to '/instructors'
     end
 
-    def delete
-        Instructor.find(params[:id]).destroy
+    def destroy
+        @instructor = Instructor.find(params[:id])
+        @instructor.delete
         redirect_to '/instructors'
     end
 end

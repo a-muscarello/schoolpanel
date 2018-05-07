@@ -1,6 +1,7 @@
 class StudentsController < ApplicationController
     def index
         @student = Student.all
+        render layout: false
     end
 
     def show
@@ -26,8 +27,9 @@ class StudentsController < ApplicationController
         redirect_to '/students'
     end
 
-    def delete
-        Student.find(params[:id]).destroy
+    def destroy
+        @student = Student.find(params[:id])
+        @student.delete
         redirect_to '/students'
     end
 end

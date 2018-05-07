@@ -1,4 +1,5 @@
 
+
 <%= form_for @instructor do |f| %>
     <%= f.label :first_name %>
     <%= f.text_field :first_name %>
@@ -10,6 +11,8 @@
     <%= f.number_field :salary %>
     <%= f.label :highest_education %>
     <%= f.text_field :highest_education %>
+    <%= f.label :cohort_id %>
+    <%= f.number_field :cohort_id %>
     <%= f.submit %>
 <% end %>
    

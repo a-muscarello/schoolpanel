@@ -9,7 +9,8 @@ class InstructorsController < ApplicationController
     end
 
     def create
-        @instructor = Instructor.new(instructor_params[:id])
+        Instructor.create(instructor_params)
+        redirect_to '/instructors'
     end
     
     def new
@@ -31,3 +32,9 @@ class InstructorsController < ApplicationController
         redirect_to '/instructors'
     end
 end
+
+private
+
+    def instructor_params
+        params.require(:instructor).permit(:first_name, :last_name, :age, :salary, :highest_education, :cohort_id)
+    end

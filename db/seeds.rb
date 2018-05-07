@@ -11,12 +11,12 @@ Instructor.create(first_name: 'Orlando', last_name: 'Caraballo', age: 70, salary
 Instructor.create(first_name: 'Bill', last_name: 'Keller', age: 50, salary: 3000, highest_education: 'PhD', cohort_id: 3)
 
 
-Student.create(first_name: 'Janelle', last_name: 'Ballack', age: 100, highest_education: 'HS', cohort_id: 1)
-Student.create(first_name: 'Danyale', last_name: 'Walker', age: 70, highest_education: 'HS', cohort_id: 2)
-Student.create(first_name: 'Mashal', last_name: 'Azhar', age: 105, highest_education: 'HS', cohort_id: 3)
-Student.create(first_name: 'Caroline', last_name: 'Russell', age: 77, highest_education: 'HS', cohort_id: 1)
-Student.create(first_name: 'Kay', last_name: 'Mok', age: 99, highest_education: 'HS', cohort_id: 2)
-Student.create(first_name: 'Ronen', last_name: 'Goren', age: 109, highest_education: 'HS', cohort_id: 3)
+Student.create(first_name: 'Janelle', last_name: 'Ballack', age: 100, highest_education: 'High School', cohort_id: 1)
+Student.create(first_name: 'Danyale', last_name: 'Walker', age: 70, highest_education: 'High School', cohort_id: 2)
+Student.create(first_name: 'Mashal', last_name: 'Azhar', age: 105, highest_education: 'High School', cohort_id: 3)
+Student.create(first_name: 'Caroline', last_name: 'Russell', age: 77, highest_education: 'High School', cohort_id: 1)
+Student.create(first_name: 'Kay', last_name: 'Mok', age: 99, highest_education: 'High School', cohort_id: 2)
+Student.create(first_name: 'Ronen', last_name: 'Goren', age: 109, highest_education: 'High School', cohort_id: 3)
 
 
 Course.create(name: 'NYC Web Developement Fellowship', total_in_class_hours: 560)
@@ -24,7 +24,7 @@ Course.create(name: 'Software Engineering Intensive', total_in_class_hours: 560)
 Course.create(name: 'UX Design Intensive', total_in_class_hours: 560)
 
 
-Cohort.create(name: 'NYC WDF', start_date: 'Feb 26, 2018', end_date: 'Jun 7, 2018', instructor_name: 'D.Patlut', course_id: 1)
+Cohort.create(name: 'NYC Web Developement Fellowship', start_date: 'Feb 26, 2018', end_date: 'Jun 7, 2018', instructor_name: 'D.Patlut', course_id: 1)
 Cohort.create(name: 'Software Engineering Intensive', start_date: 'Mar 12, 2018', end_date: 'Jun 21, 2018', instructor_name: 'O.Caraballo', course_id: 3)
 Cohort.create(name: 'UX Design Intensive Intensive', start_date: 'Apr 16, 2018', end_date: 'Jul 6, 2018', instructor_name: 'B.Keller', course_id: 2)
 

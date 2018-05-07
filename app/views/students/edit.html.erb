@@ -9,6 +9,8 @@
     <%= f.number_field :age, value: @student.age %>
     <%= f.label :highest_education %>
     <%= f.text_field :highest_education, value: @student.highest_education %>
+    <%= f.label :cohort_id %>
+    <%= f.number_field :cohort_id, value: @student.cohort_id %>
     <%= f.submit %>
 <% end %>
 

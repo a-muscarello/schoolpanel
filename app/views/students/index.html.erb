@@ -1,6 +1,4 @@
 
-<h1>Welcome to Dash Academy</h1>
-
 <% @student.each do |student| %>
     <div>
         <h3>First Name :<%= student.first_name %></h3>
@@ -10,7 +8,3 @@
         <h3>Cohort ID: <%= student.cohort_id %></h3>
     </div>
 <% end %>
-
-
-<br>
-# <%= render 'application/header', locals: {student: @studentdeg } %>

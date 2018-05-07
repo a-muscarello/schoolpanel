@@ -5,15 +5,18 @@ class StudentsController < ApplicationController
     end
 
     def show
-
-    end
-
-    def create
-        @student = Student.new(student_params[:id])
+        @student = Student.find(params[:id])
+    
     end
 
     def new
         @student = Student.new
+    end
+
+    def create
+        @student = Student.new(student_params[:id])
+        @student.update(student_params[:id])
+        redirect_to '/index'
     end
 
     def edit
@@ -23,7 +26,7 @@ class StudentsController < ApplicationController
     def update
         @student = Student.find(params[:id])
         @student.update(student_params)
-        redirect_to '/students'
+        redirect_to '/index'
     end
 
     def delete

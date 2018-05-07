@@ -19,7 +19,7 @@ Student.create(first_name: 'Kay', last_name: 'Mok', age: 99, highest_education: 
 Student.create(first_name: 'Ronen', last_name: 'Goren', age: 109, highest_education: 'HS', cohort_id: 3)
 
 
-Course.create(name: 'NYC WDF', total_in_class_hours: 560)
+Course.create(name: 'NYC Web Developement Fellowship', total_in_class_hours: 560)
 Course.create(name: 'Software Engineering Intensive', total_in_class_hours: 560)
 Course.create(name: 'UX Design Intensive', total_in_class_hours: 560)
 
@@ -39,3 +39,11 @@ CohortStudent.create(cohort_id: 3, student_id: 3)
 CohortInstructor.create(cohort_id: 1, instructor_id: 1)
 CohortInstructor.create(cohort_id: 2, instructor_id: 2)
 CohortInstructor.create(cohort_id: 3, instructor_id: 3)
+
+
+Admin.create(user_name: 'jballack', password: 'j12345')
+Admin.create(user_name: 'dwalker', password: 'd12345')
+Admin.create(user_name: 'mazhar', password: 'm12345')
+Admin.create(user_name: 'crussell', password: 'c12345')
+Admin.create(user_name: 'kmok', password: 'k12345')
+Admin.create(user_name: 'rgoren', password: 'r12345')

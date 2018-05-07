@@ -1,0 +1,12 @@
+
+
+<%= form_for @course do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name, value: @course.name %>
+    <%= f.label :total_in_class_hours %>
+    <%= f.number_field :total_in_class_hours, value: @course.total_in_class_hours %>
+    <%= f.submit %>
+<% end %>
+
+
+<%= link_to 'Delete', course_path(@course), method: :delete %>

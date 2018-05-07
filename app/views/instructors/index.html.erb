@@ -1,3 +1,5 @@
+<%= render 'application/header', locals: {instructor: @instructorabc } %>
+
 
 <% @instructor.each do |instructor| %>
     <div>
@@ -10,4 +12,3 @@
 <% end %>
 
 
-<%= render 'application/header', locals: {instructor: @instructorabc } %>

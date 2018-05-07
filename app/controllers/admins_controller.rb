@@ -1,18 +1,19 @@
 class AdminsController < ApplicationController
     def index
-        @admin = Admin .all
+        @admin = Admin.all
+        render layout: false
     end
 
     def show
-
+        @admin = Admin.find(params[:id])
     end
 
     def create
-
+        @admin = Admin.new(admin_params[:id])
     end
 
     def new
-
+        @admin = Admin.new
     end
 
     def edit
@@ -21,7 +22,7 @@ class AdminsController < ApplicationController
 
     def update
         @admin = Admin.find(params[:id])
-        @admin.update(instructor_params)
+        @admin.update(admin_params)
         redirect_to '/admin'
     end
 
@@ -29,4 +30,11 @@ class AdminsController < ApplicationController
         Admin.find(params[:id]).destroy
         redirect_to '/admin'
     end
+end
+
+
+private
+
+def admin_params
+    params.require(:user).permit(:user_name, :password)
 end

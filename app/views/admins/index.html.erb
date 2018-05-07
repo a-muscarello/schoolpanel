@@ -1,9 +1,10 @@
 
+<% @admin.each do |admin| %>
+    <div>
+        <h3><%= admin.user_name %></h3>
+        <h3><%= admin.password %></h3>
+    </div>
+<% end %>
 
-<h2>Users</h2>
 
-<ul>
-    <% @user.each do |user| %>
-        <%= render @users %>
-    <% end %>
-</ul>
+<br>

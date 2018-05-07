@@ -10,8 +10,15 @@
   </head>
 
   <body>
-    <%= render 'application/header' %>
+    <div>
+      <%= render 'application/header' %>
+    </div>
+
     <%= yield %>
     
   </body>
+  
+  <div>
+      <%= render 'application/footer' %>
+    </div>
 </html>

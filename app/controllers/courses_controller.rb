@@ -9,25 +9,35 @@ class CoursesController < ApplicationController
     end
 
     def create
-        @course = Course.new(course[:id])
+        Course.create(course_params)
+        redirect_to '/courses'
     end
     
     def new
-        Course.new(course[:id])
+        # Course.new(course[:id])
+        @course = Course.new
     end
 
     def edit
-        @course = Course.find(params[:idß])
+        @course = Course.find(params[:id])
     end
 
     def update
         @course = Course.find(params[:id])
-        @course.update(course)
+        @course.update(course_params)
         redirect_to '/courses'
     end
 
-    def delete
-        Course.find(params[:id]).destroy
+    def destroy
+        @course = Course.find(params[:id])
+        @course.delete
         redirect_to '/courses'
+      
     end
 end
+
+private
+
+    def course_params
+        params.require(:course).permit(:name, :total_in_class_hours)
+    end

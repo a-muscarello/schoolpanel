@@ -1,12 +1,11 @@
 
-# <%= render 'application/header', locals: {course: @courseghi } %>
 
-<h1>These are the courses that are currently offered at New York Code + Design Academy</h1>
+<h1>These are the courses that are currently offered at Dash Academy</h1>
 
 <% @course.each do |course| %>
     <div>
-        <h3><%= course.name %></h3>
-        <h3><%= course.total_in_class_hours %></h3>
+        <h3>Course Name: <%= course.name %></h3>
+        <h3>Total number of hours: <%= course.total_in_class_hours %></h3>
     </div>
 <% end %>
 

@@ -9,7 +9,8 @@ class CohortsController < ApplicationController
     end
 
     def create
-        @cohort = Cohort.new(cohort[:id])
+        Cohort.create(cohort_params)
+        redirect_to '/cohorts'
     end
 
     def new
@@ -22,12 +23,20 @@ class CohortsController < ApplicationController
 
     def update
         @cohort = Cohort.find(params[:id])
-        @cohort.update(cohort)
+        @cohort.update(cohort_params)
         redirect_to '/cohort'
     end
 
-    def delete
-        Cohort.find(params[:id]).destroy
+    def destroy
+        @cohort = Cohort.find(params[:id])
+        @cohort.delete
         redirect_to '/cohorts'
     end
 end
+
+
+private
+
+    def cohort_params
+        params.require(:cohort).permit(:name, :start_date, :end_date, :instructor_name, :course_id)
+    end

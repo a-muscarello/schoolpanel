@@ -1,5 +1,6 @@
 class AdminsController < ApplicationController
     def index
+        @home_page = true
         @admin = Admin.all
         render layout: false
     end
@@ -9,7 +10,8 @@ class AdminsController < ApplicationController
     end
 
     def create
-        @admin = Admin.new(admin_params[:id])
+        Admin.create(admin_params)
+        redirect_to '/admins'
     end
 
     def new
@@ -23,18 +25,30 @@ class AdminsController < ApplicationController
     def update
         @admin = Admin.find(params[:id])
         @admin.update(admin_params)
-        redirect_to '/admin'
+        redirect_to '/admins'
     end
 
-    def delete
-        Admin.find(params[:id]).destroy
-        redirect_to '/admin'
+    def destroy
+        @admin = Admin.find(params[:id])@admin.delete
+        redirect_to '/admins'
     end
 end
 
 
 private
 
-def admin_params
-    params.require(:user).permit(:user_name, :password)
-end
+    def admin_params
+        params.require(:admin).permit(:user_name, :password)
+    end
+
+    
+    
+# class PostsController < ApplicationController
+#     before_action :authorize_admin, only: [:index]
+    
+#     private
+#     def authorize_admin
+#         redirect_to root_path, alert: "Permissions denied" unless
+#         current_user.admin?
+#     end
+# end

@@ -1,31 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>Pamspanel</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
    
 		<link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
 		
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    
+    <title>Signin</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous" rel="stylesheet">
 
     <link rel="stylesheet" href="/app/assets">
     
+    <link href="signin.html.erb" rel="stylesheet">
+
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 
-    <div class="logo-container">
-		  <img class="logo-pix" src="/app/assets/logo.png" id="dashlogo.png">
-    </div>
+    # <div class="logo-container">
+	# 	  <img class="logo-pix" src="/app/assets/logo.png" id="dashlogo.png">
+    # </div>
   
   </head>
 
-  <body>
+  <body class="<%= @homepage_class ? 'homepage' : ''%>">
+
+  <body class="text-center vsc-initialized">
 
     <nav class="navbar navbar-expand navbar-dark bg-dark">	
 		<div class="collapse navbar-collapse" id="nav1">
@@ -43,6 +49,7 @@
 		</div>
   </nav>
 
-  
-    <%= yield %>
 
+<%= yield %>
+
+</body>

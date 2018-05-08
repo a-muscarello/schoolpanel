@@ -17,12 +17,3 @@
     </form>
 </body>
 </html>
-
-
-    <% if current_user.admin? %>
-    <%= render "navigation/admin_navigation" %>
-    <% elsif current_user.user? %>
-    <%= render "navigation/user_navigation" %>
-    <% end %>
-
-    

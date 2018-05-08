@@ -1,4 +1,6 @@
 class AdminsController < ApplicationController
+    before_filter :authorize_admin, only: [:new, :create, :edit]
+    
     def index
         @home_page = true
         @admin = Admin.all
@@ -32,6 +34,12 @@ class AdminsController < ApplicationController
         @admin = Admin.find(params[:id])@admin.delete
         redirect_to '/admins'
     end
+
+
+    def authorize_admin
+        return unless !current_user.admin?
+        redirect_to root_path
+    end
 end
 
 
@@ -40,15 +48,3 @@ private
     def admin_params
         params.require(:admin).permit(:user_name, :password)
     end
-
-    
-    
-# class PostsController < ApplicationController
-#     before_action :authorize_admin, only: [:index]
-    
-#     private
-#     def authorize_admin
-#         redirect_to root_path, alert: "Permissions denied" unless
-#         current_user.admin?
-#     end
-# end

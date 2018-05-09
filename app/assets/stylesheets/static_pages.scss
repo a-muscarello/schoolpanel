@@ -4,7 +4,7 @@
 
 
 body {
-    background-image: image-url('water.jpg');
+    background-image: image-url('triangles.png');
     background-size: cover;
 }
 
@@ -15,6 +15,7 @@ body {
 
 label {
     margin-top: 5px;
+    color: white;
 }
 
 .form-control {
@@ -42,4 +43,14 @@ label {
     border-radius: .3rem;
     width: 30%;
     align-items: center;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #272a2c;
+    border-color: #686d74;
+}
+
+.h3 {
+    color: white;
 }

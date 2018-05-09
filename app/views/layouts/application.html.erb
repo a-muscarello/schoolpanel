@@ -23,9 +23,6 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 
-    # <div class="logo-container">
-	# 	  <img class="logo-pix" src="/app/assets/logo.png" id="dashlogo.png">
-    # </div>
   
   </head>
 
@@ -33,21 +30,6 @@
 
   <body class="text-center vsc-initialized">
 
-    <nav class="navbar navbar-expand navbar-dark bg-dark">	
-		<div class="collapse navbar-collapse" id="nav1">
-			<ul class="navbar-nav mr-auto">
-				<li class="nav-item">
-					<a class="nav-link" href="/admin">Admin</a>
-          <a class="nav-link" href="/user">User</a>
-				</li>  
-			</ul>
-
-		<form class="inline my-2 my-md-0">
-			<input class="control" type="text" placeholder="">
-			<a class="nav-link" href="/search">Search</a>
-		</form>	
-		</div>
-  </nav>
 
 
 <%= yield %>

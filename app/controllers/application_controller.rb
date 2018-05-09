@@ -3,5 +3,7 @@ class ApplicationController < ActionController::Base
 
     skip_before_action :authenticate_user!, raise: false
 
+    # layout false, only: :landing
+
     # before_action :authenticate_user!
 end

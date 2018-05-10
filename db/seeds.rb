@@ -41,4 +41,12 @@ CohortInstructor.create(cohort_id: 2, instructor_id: 2)
 CohortInstructor.create(cohort_id: 3, instructor_id: 3)
 
 
-Admin.create(user_name: 'administrator', password: 'admin123')
+Admin.create(user_name: 'admin1', password: 'admin123')
+Admin.create(user_name: 'jballack', password: 'j12345')
+Admin.create(user_name: 'mazhar', password: 'm12345')
+Admin.create(user_name: 'crussell', password: 'c12345')
+Admin.create(user_name: 'kmok', password: 'k12345')
+Admin.create(user_name: 'rgoren', password: 'r12345')
+Admin.create(user_name: 'dpatlut', password: 'd12345')
+Admin.create(user_name: 'ocaraballo', password: 'o12345')
+Admin.create(user_name: 'bkeller', password: 'b12345')

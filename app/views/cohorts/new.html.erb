@@ -1,15 +1,19 @@
 
-
-<%= form_for @cohort do |f| %>
-    <%= f.label :name %>
-    <%= f.text_field :name %>
-    <%= f.label :start_date %>
-    <%= f.text_field :start_date %>
-    <%= f.label :end_date %>
-    <%= f.text_field :end_date %>
-    <%= f.label :instructor_name %>
-    <%= f.text_field :instructor_name %>
-    <%= f.label :course_id %>
-    <%= f.number_field :course_id %>
-    <%= f.submit %>
-<% end %>
+<table class="table table-striped">
+    <thead class="thead-dark">
+        <tr>
+        <%= form_for @cohort do |f| %>
+            <td><%= f.label :name %>
+            <%= f.text_field :name %></td>
+            <td><%= f.label :start_date %>
+            <%= f.text_field :start_date %></td>
+            <td><%= f.label :end_date %>
+            <%= f.text_field :end_date %></td>
+            <td><%= f.label :instructor_name %>
+            <%= f.text_field :instructor_name %></td>
+            <td><%= f.label :course_id %>
+            <%= f.number_field :course_id %></td>
+            <%= f.submit %>
+        <% end %>
+    </thead>
+</table>

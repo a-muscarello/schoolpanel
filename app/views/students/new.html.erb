@@ -1,31 +1,20 @@
 
-
-<%= form_for @student do |f| %>
-    <%= f.label :first_name %>
-    <%= f.text_field :first_name %>
-    <%= f.label :last_name %>
-    <%= f.text_field :last_name %>
-    <%= f.label :age %>
-    <%= f.number_field :age %>
-    <%= f.label :highest_education %>
-    <%= f.text_field :highest_education %>
-    <%= f.label :cohort_id %>
-    <%= f.number_field :cohort_id %>
-    <%= f.submit %>
-<% end %>
-
-
-<br>
-# <%= form_for :article do |f| %>
-#     <p>
-#         <%= f.label :title %><br>
-#         <%= f.text_field :title %>
-#     </p>
-#     <p>
-#         <%= f.label :text %><br>
-#         <%= f.text_area :text %>
-#     </p>
-#     <p>
-#         <%= f.submit %>
-#     </p>
-# <% end %>
+<table class="table table-striped">
+  <thead class="thead-dark">
+    <tr>
+    <%= form_for @student do |f| %>
+        <td><%= f.label :first_name %>
+        <%= f.text_field :first_name %></td>
+        <td><%= f.label :last_name %>
+        <%= f.text_field :last_name %></td>
+        <td><%= f.label :age %>
+        <%= f.number_field :age %></td>
+        <td><%= f.label :highest_education %>
+        <%= f.text_field :highest_education %></td>
+        <td><%= f.label :cohort_id %>
+        <%= f.number_field :cohort_id %></td>
+        </tr>  
+        <%= f.submit %>
+        <% end %>
+  </tbody>
+</table>

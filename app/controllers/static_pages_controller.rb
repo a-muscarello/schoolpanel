@@ -1,6 +1,7 @@
 class StaticPagesController < ApplicationController
     def home
-         
+        
+        # redirect_to new_student_path
     end
 
     # def '/user/login' do 
@@ -12,8 +13,19 @@ class StaticPagesController < ApplicationController
     #         redirect '/home/index'
     #     end 
     # end
+    
+    # def index
+    #     if !logged_in? && !session[:visited_courses_path]
+    #         redirect_to courses_path
+    #     else
+    #     # Render the main view of goldhat.org
+    #     end
+    end
+        
+    private
 
-    def show
+    def course_params
+        params.require(:course).permit(:first_name, :last_name, :age, :highest_education, :cohort_id)
     end
 
 end

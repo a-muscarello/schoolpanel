@@ -1,11 +1,31 @@
 
+<table class="table table-striped">
+<thead class="thead-dark">
+  <tr>
+    <form>
+        <th scope="col">Cohort Name:</th>
+        <th scope="col">Start Date</th>
+        <th scope="col">End Date</th>
+        <th scope="col">Instructor Name</th>
+        <th scope="col">Course Id</th>
+    </form>
+  </tr>
+</thead>
 
-<% @cohort.each do |cohort| %>
+<tbody>
+  <tr>
+    <form>
+    <% @cohort.each do |cohort| %>
     <div>
-        <h3>Cohort Name: <%= cohort.name %></h3>
-        <h3>Start Date: <%= cohort.start_date %></h3>
-        <h3>End Date: <%= cohort.end_date %></h3>
-        <h3>Instructor Name: <%= cohort.instructor_name %></h3>
-        <h3>Course ID: <%= cohort.course_id %></h3>
-    </div>
-<% end %>
+        <td><%= cohort.name %></td>
+        <td><%= cohort.start_date %></td>
+        <td><%= cohort.end_date %></td>
+        <td><%= cohort.instructor_name %></td>
+        <td><%= cohort.course_id %></td>
+        </tr>  
+        <% end %>
+        </form>
+    </tbody>
+  </table>
+
+  

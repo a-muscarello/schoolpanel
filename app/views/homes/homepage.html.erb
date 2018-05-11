@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+		<link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+		
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+		<link rel="stylesheet" href="/css/style.css">
+
+	</head>
+	<body>
+        <nav class="navbar navbar-expand navbar-dark bg-dark">	
+            <div class="collapse navbar-collapse" id="nav1">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/admins">Admin</a>
+                        <a class="nav-link" href="/students">Students</a>
+                        <a class="nav-link" href="/instructors">Instructors</a>
+                        <a class="nav-link" href="/courses">Courses</a>
+                        <a class="nav-link" href="/cohorts">Cohorts</a>
+                    </li>  
+                </ul>
+            </div>
+        </nav>
+	</body>
+
+
+<%= yield %>
+
+
+<footer class="page-footer">
+	<div class="container">
+	<div id="copyright" class="col-left">© Copyright Dash Academy 2018. All rights reserved.</div>
+		<div class="row">
+		<div class="mediainfo container">
+			<a href="https://www.facebook.com/" class="fa fa-facebook"></a>
+			<a href="https://twitter.com/" class="fa fa-twitter"></a>
+			<a href="https://www.instagram.com/" class="fa fa-instagram"></a>  
+		</div>
+	</div>
+</footer>
+
+</html>
+
+

@@ -2,3 +2,60 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+body {
+    background-image: image-url('triangles.png');
+    background-size: cover;
+}
+
+.form-signin {
+    margin-top: 50px;
+    text-align: center;
+}
+
+label {
+    margin-top: 5px;
+    color: white;
+}
+
+.form-control {
+    display: block;
+    text-align: center;
+    margin-left: 425px;
+    margin-top: 10px;
+    width: 30%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.btn-lg {
+    display: inline-block;
+    padding: 1rem;
+    font-size: 1.25rem;
+    line-height: 1rem;
+    border-radius: .3rem;
+    width: 30%;
+    align-items: center;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #272a2c;
+    border-color: #686d74;
+}
+
+.h3 {
+    color: white;
+}
+
+.table {
+    color: #272a2c;
+    height: 5px;
+}
+

@@ -13,40 +13,40 @@ class HomesController < ApplicationController
     def home
     end
 
-    def index
-        @home = Home.all
-        render layout: false
-    end
+#     def index
+#         @home = Home.all
+#         render layout: false
+#     end
 
-    def show
-        @home = Home.find(params[:id])
-    end
+#     def show
+#         @home = Home.find(params[:id])
+#     end
 
-    def new
-        @home = Home.new
-    end
+#     def new
+#         @home = Home.new
+#     end
 
-    def create
-        Home.create(home)
-        redirect_to '/home'
-    end
+#     def create
+#         Home.create(home)
+#         redirect_to '/home'
+#     end
 
-    def edit
-        @home = Home.find(params[:id])
-    end
+#     def edit
+#         @home = Home.find(params[:id])
+#     end
 
-    def update
-        @home = Home.find(params[:id])
-        @home.update(home)
-        redirect_to '/home'
-    end
+#     def update
+#         @home = Home.find(params[:id])
+#         @home.update(home)
+#         redirect_to '/home'
+#     end
 
-    def destroy
-        @home = Home.find(params[:id])
-        @home.delete
-        redirect_to '/home'
-    end
-end
+#     def destroy
+#         @home = Home.find(params[:id])
+#         @home.delete
+#         redirect_to '/home'
+#     end
+# end
 
 private
 

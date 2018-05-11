@@ -1,8 +1,7 @@
 class AdminsController < ApplicationController
-    before_filter :authorize_admin, only: [:new, :create, :edit]
+    # before_filter :authorize_admin, only: [:new, :create, :edit]
     
     def index
-        @home_page = true
         @admin = Admin.all
         render layout: false
     end
@@ -36,10 +35,10 @@ class AdminsController < ApplicationController
     end
 
 
-    def authorize_admin
-        return unless !current_user.admin?
-        redirect_to root_path
-    end
+    # def authorize_admin
+    #     return unless !current_user.admin?
+    #     redirect_to root_path
+    # end
 end
 
 

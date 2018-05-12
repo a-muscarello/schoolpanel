@@ -1,7 +1,8 @@
 class CoursesController < ApplicationController
     def index
         @course = Course.all
-        render layout: false
+        # render layout: false
+        # redirect_to "/course_info"
     end
 
     def show

@@ -16,7 +16,7 @@
   <tr>
     <form>
     <% @cohort.each do |cohort| %>
-        <td><%= cohort.name %></td>
+        <td><a class="nav-link" href="/courses"><%= cohort.name %></a></td>
         <td><%= cohort.start_date %></td>
         <td><%= cohort.end_date %></td>
         <td><%= cohort.instructor_name %></td>

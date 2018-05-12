@@ -5,6 +5,8 @@
 body {
     background-image: image-url('triangles.png');
     background-size: cover;
+    // margin-left: 20px;
+    margin-right: 20px;
 }
 
 .form-signin {
@@ -52,6 +54,11 @@ label {
 
 .h3 {
     color: white;
+}
+
+.table {
+    color: #272a2c;
+    height: 5px;
 }
 
 .table td, .table th {

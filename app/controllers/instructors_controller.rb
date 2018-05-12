@@ -1,7 +1,7 @@
 class InstructorsController < ApplicationController
     def index
         @instructor = Instructor.all
-        render layout: false
+        # render layout: false
     end
 
     def show

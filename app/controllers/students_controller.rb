@@ -1,7 +1,7 @@
 class StudentsController < ApplicationController
     def index
         @student = Student.all
-        render layout: false
+        # render layout: false
     end
 
     def show

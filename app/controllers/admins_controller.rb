@@ -5,7 +5,7 @@ class AdminsController < ApplicationController
     
     def index
         @admin = Admin.all
-        render layout: false
+        # render layout: false
     end
 
     def show

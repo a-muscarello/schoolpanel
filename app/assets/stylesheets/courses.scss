@@ -2,15 +2,11 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-
-// html, body {
-//     height: 100%;
-//     background-color: lightslategrey;
-// }
-
 body {
     background-image: image-url('triangles.png');
     background-size: cover;
+    // margin-left: 20px;
+    margin-right: 20px;
 }
 
 .form-signin {
@@ -65,3 +61,21 @@ label {
     height: 5px;
 }
 
+.table td, .table th {
+    padding: .75rem;
+    vertical-align: top;
+    border-top: 0px;
+}
+
+.nav-item a {
+    display: inline-block;
+    justify-content: space-between;
+}
+
+.navbar {
+    color: #3b4c5e;
+}
+
+td {
+    color: white;
+}

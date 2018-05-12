@@ -17,6 +17,6 @@
  *= require reset
  *= require flexboxgrid
  *= require custom
- *= require admins.scss
+ /* *= require admins.scss */
 
  /* def body.homepage */

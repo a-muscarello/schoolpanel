@@ -1,7 +1,7 @@
 class CohortsController < ApplicationController
     def index
         @cohort = Cohort.all
-        render layout: false
+        # render layout: false
     end
 
     def show

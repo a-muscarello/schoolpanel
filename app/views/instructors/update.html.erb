@@ -1,11 +1,14 @@
 
-
-<form action="/user/user_id" method="POST">
-    <input type="hidden" name="_method" value="PUT">
-    <input type="text" name="first_name" value="<%= @instructor.first_name %>">
-    <input type="text" name="last_name" value="<%= @instructor.last_name %>">
-    <input type="text" name="age" value="<%= @instructor.age %>">
-    <input type="text" name="highest_education" value="<%= @instructor.highest_education %>">
-    <input type="text" name="cohort_id" value="<%= @instructor.cohort_id %>">
-    <button type="submit">Update</button>
-</form>
+<table class="table table-striped">
+    <tr>
+    <form action="/user/user_id" method="POST">
+        <tr><td><input type="hidden" name="_method" value="PUT"></td></tr>
+        <td><tr><input type="text" name="first_name" value="<%= @instructor.first_name %>"></td></tr>
+        <td><tr><input type="text" name="last_name" value="<%= @instructor.last_name %>"></td></tr>
+        <td><tr><input type="text" name="age" value="<%= @instructor.age %>"></td></tr>
+        <td><tr><input type="text" name="highest_education" value="<%= @instructor.highest_education %>"></td></tr>
+        <td><tr><input type="text" name="cohort_id" value="<%= @instructor.cohort_id %>"></td></tr>
+        <button type="submit">Update</button>
+    </tr>
+    </form>
+</table>

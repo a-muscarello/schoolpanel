@@ -1,8 +1,15 @@
 
-
-
-<h3><%= @cohort.name %></h3>
-<h3><%= @cohort.start_date %></h3>
-<h3><%= @cohort.end_date %></h3>
-<h3><%= @cohort.instructor_name %></h3>
-<h3><%= @cohort.course_id %></h3>
+<table class="table table-striped">
+    <thead class="thead-dark">
+        <tr>
+        <%= form_for @cohort do |f| %>
+            <td><%= @cohort.name %></td>
+            <td><%= @cohort.start_date %></td>
+            <td><%= @cohort.end_date %></td>
+            <td><%= @cohort.instructor_name %></td>
+            <td><%= @cohort.course_id %></td>
+            <%= f.submit %>
+        <% end %>
+    </tr>
+  </thead>
+</table>

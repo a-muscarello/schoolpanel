@@ -1,4 +1,11 @@
 
-
-<h3><%= @course.name %></h3>
-<h3><%= @course.total_in_class_hours %></h3>
+<table class="table table-striped">
+    <thead class="thead-dark">
+        <tr>
+        <%= form_for @course do |f| %>
+            <td><%= @course.name %></td>
+            <td><%= @course.total_in_class_hours %></td>
+        <% end %>
+        </tr>
+    </thead>
+</table>

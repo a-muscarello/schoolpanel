@@ -1,11 +1,17 @@
 
-
-<h3>First Name: <%= @instructor.first_name %></h3>
-<h3>Last Name: <%= @instructor.last_name %></h3>
-<h3>Age: <%= @instructor.age %></h3>
-<h3>Salary : $<%= @instructor.salary %></h3>
-<h3>Highest Education: <%= @instructor.highest_education %></h3>
-<h3>Cohort ID: <%= @instructor.cohort_id %></h3>
-
-
-        
+<table class="table table-striped">
+    <thead class="thead-dark">
+        <tr>
+        <%= form_for @instructor do |f| %>
+            <td>First Name: <%= @instructor.first_name %></td>
+            <td>Last Name: <%= @instructor.last_name %></td>
+            <td>Age: <%= @instructor.age %></td>
+            <td>Salary : $<%= @instructor.salary %></td>
+            <td>Highest Education: <%= @instructor.highest_education %></td>
+            <td>Cohort ID: <%= @instructor.cohort_id %></td>
+            <%= f.submit %>
+        <% end %>
+        </tr>
+    </thead>
+</table>
+    

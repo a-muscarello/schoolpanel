@@ -1,0 +1,12 @@
+
+<table class="table table-striped">
+<thead class="thead-dark">
+  <tr>
+    <%= form_for @admin do |f| %>
+      <td><%= @admin.user_name %></td>
+      <td><%= @admin.password %></td>
+      <%= f.submit %>
+    <% end %>
+    </tr>
+  </thead>
+</table>

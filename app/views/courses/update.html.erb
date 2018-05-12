@@ -1,10 +1,12 @@
 
 
-
-<form action="/user/user_id" method="POST">
-    <input type="hidden" name="_method" value="PUT">
-    <input type="text" name="name" value="<%= @course.name %>">
-    <input type="text" name="total_in_class_hours" value="<%= @course.total_in_class_hours %>">
-
-    <button type="submit">Update</button>
-</form>
+<table class="table table-striped">
+    <tr>
+        <form action="/user/user_id" method="POST">
+            <tr><td><input type="hidden" name="_method" value="PUT"></td></tr>
+            <tr><td><input type="text" name="name" value="<%= @course.name %>"></td></tr>
+            <tr><td><input type="text" name="total_in_class_hours" value="<%= @course.total_in_class_hours %>"></td></tr>
+            <button type="submit">Update</button>
+        </tr>
+    </form>
+</table>

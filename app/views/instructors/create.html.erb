@@ -1,8 +1,16 @@
 
-
-<h3><%= @instructor.first_name %></h3>
-<h3><%= @instructor.last_name %></h3>
-<h3><%= @instructor.age %></h3>
-<h3><%= @instructor.salary %></h3>
-<h3><%= @instructor.highest_education %></h3>
-<h3><%= @instructor.cohort_id %></h3>
+<table class="table table-striped">
+<thead class="thead-dark">
+  <tr>
+    <%= form_for @instructor do |f| %>
+      <td><%= @instructor.first_name %></td>
+      <td><%= @instructor.last_name %></td>
+      <td><%= @instructor.age %></td>
+      <td><%= @instructor.salary %></td>
+      <td><%= @instructor.highest_education %></td>
+      <td><%= @instructor.cohort_id %></td>
+      <%= f.submit %>
+    <% end %>
+    </tr>
+  </thead>
+</table>

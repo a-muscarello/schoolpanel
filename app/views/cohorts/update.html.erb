@@ -1,12 +1,14 @@
 
-
-<form action="/user/user_id" method="POST">
-    <input type="hidden" name="_method" value="PUT">
-    <input type="text" name="name" value="<%= @cohort.name %>">
-    <input type="text" name="start_date" value="<%= @cohort.start_date %>">
-    <input type="text" name="end_date" value="<%= @cohort.end_date %>">
-    <input type="text" name="instructor_name" value="<%= @cohort.instructor_name %>">
-    <input type="text" name="course_id" value="<%= @cohort.course_id %>">
-
-    <button type="submit">Update</button>
-</form>
+<table class="table table-striped">
+    <tr>
+    <form action="/user/user_id" method="POST">
+        <tr><td><input type="hidden" name="_method" value="PUT"></td></tr>
+        <tr><td><input type="text" name="name" value="<%= @cohort.name %>"></td></tr>
+        <tr><td><input type="text" name="start_date" value="<%= @cohort.start_date %>"></td></tr>
+        <tr><td><input type="text" name="end_date" value="<%= @cohort.end_date %>"></td></tr>
+        <tr><td><input type="text" name="instructor_name" value="<%= @cohort.instructor_name %>"></td></tr>
+        <tr><td><input type="text" name="course_id" value="<%= @cohort.course_id %>"></td></tr>
+        <button type="submit">Update</button>
+    </tr>
+    </form>
+</table>

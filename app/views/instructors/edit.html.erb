@@ -1,18 +1,23 @@
 
+<table class="table table-striped">
+    <thead class="thead-dark">
+        <tr>
+        <%= form_for @instructor do |f| %>
+            <tr><td><%= f.label :first_name %></td></tr>
+            <tr><td><%= f.text_field :first_name, value: @instructor.first_name %></td></tr>
+            <tr><td><%= f.label :last_name %></td></tr>
+            <tr><td><%= f.text_field :last_name, value: @instructor.last_name %></td></tr>
+            <tr><td><%= f.label :age %></td></tr>
+            <tr><td><%= f.number_field :age, value: @instructor.age %></td></tr>
+            <tr><td><%= f.label :salary %></td></tr>
+            <tr><td><%= f.number_field :salary, value: @instructor.salary %></td></tr>
+            <tr><td><%= f.label :highest_education %></td></tr>
+            <tr><td><%= f.text_field :highest_education, value: @instructor.highest_education %></td></tr>
+            <%= f.submit %>
+        <% end %>
+        </tr>
+    </thead>
+ </table>
 
-<%= form_for @instructor do |f| %>
-    <%= f.label :first_name %>
-    <%= f.text_field :first_name, value: @instructor.first_name %>
-    <%= f.label :last_name %>
-    <%= f.text_field :last_name, value: @instructor.last_name %>
-    <%= f.label :age %>
-    <%= f.number_field :age, value: @instructor.age %>
-    <%= f.label :salary %>
-    <%= f.number_field :salary, value: @instructor.salary %>
-    <%= f.label :highest_education %>
-    <%= f.text_field :highest_education, value: @instructor.highest_education %>
-    <%= f.submit %>
-<% end %>
 
-
-<%= link_to 'Delete', instructor_path(@instructor), method: :delete %>
+<%= link_to 'Delete', instructor_path(@instructor), remote: true, method: :delete %>

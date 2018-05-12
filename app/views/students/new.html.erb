@@ -2,7 +2,7 @@
 <table class="table table-striped">
   <thead class="thead-dark">
     <tr>
-    <%= form_for @student do |f| %>
+      <%= form_for @student do |f| %>
         <td><%= f.label :first_name %>
         <%= f.text_field :first_name %></td>
         <td><%= f.label :last_name %>
@@ -13,8 +13,8 @@
         <%= f.text_field :highest_education %></td>
         <td><%= f.label :cohort_id %>
         <%= f.number_field :cohort_id %></td>
-        </tr>  
         <%= f.submit %>
-        <% end %>
+      <% end %>
+    </tr>  
   </thead>
 </table>

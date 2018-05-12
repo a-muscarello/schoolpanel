@@ -1,12 +1,16 @@
 
+<table class="table table-striped">
+<thead class="thead-dark">
+    <tr>
+    <%= form_for @course do |f| %>
+        <tr><td><%= f.label :name %></td></tr>
+        <tr><td><%= f.text_field :name, value: @course.name %></td></tr>
+        <tr><td><%= f.label :total_in_class_hours %></td></tr>
+        <tr><td><%= f.number_field :total_in_class_hours, value: @course.total_in_class_hours %></td></tr>
+        <%= f.submit %>
+    <% end %>
+    </tr>
+    </thead>
+</table>
 
-<%= form_for @course do |f| %>
-    <%= f.label :name %>
-    <%= f.text_field :name, value: @course.name %>
-    <%= f.label :total_in_class_hours %>
-    <%= f.number_field :total_in_class_hours, value: @course.total_in_class_hours %>
-    <%= f.submit %>
-<% end %>
-
-
-<%= link_to 'Delete', course_path(@course), method: :delete %>
+<%= link_to 'Delete', course_path(@course), remote: true, method: :delete %>

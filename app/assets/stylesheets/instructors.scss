@@ -46,7 +46,7 @@ label {
 
 .btn-primary {
     color: #fff;
-    background-color: #272a2c;
+    background-color: #3d4e5a;
     border-color: #686d74;
 }
 
@@ -54,8 +54,21 @@ label {
     color: white;
 }
 
-.table {
-    color: #272a2c;
-    height: 5px;
+.table td, .table th {
+    padding: .75rem;
+    vertical-align: top;
+    border-top: 0px;
 }
 
+.nav-item a {
+    display: inline-block;
+    justify-content: space-between;
+}
+
+.navbar {
+    color: #3b4c5e;
+}
+
+td {
+    color: white;
+}

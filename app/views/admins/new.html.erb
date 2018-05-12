@@ -1,11 +1,16 @@
 
+<table class="table table-striped">
+  <thead class="thead-dark">
+    <tr>
+    <%= form_for @admin do |f| %>
+      <td><%= f.label :user_name %>
+      <%= f.text_field :user_name %></td>
+      <td><%= f.label :password %>
+      <%= f.text_field :password %></td>
+      <%= f.submit %>
+    <% end %>
+    </tr>
+  </thead>
+</table>
 
-<%= form_for User.new, url: create_user_path do |f| %>
 
-  <% end %>
-
-  # <% m.errors.each do |attr,msg|  %>
-  #   <%=msg%>
-  #  <% end %>
-
-  # @instance.errors.first[1]

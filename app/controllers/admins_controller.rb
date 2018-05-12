@@ -1,6 +1,8 @@
 class AdminsController < ApplicationController
     # before_filter :authorize_admin, only: [:new, :create, :edit]
     
+    # before_action :zero_authors_or_authenticated, only: [:new, :create]
+    
     def index
         @admin = Admin.all
         render layout: false
@@ -30,7 +32,8 @@ class AdminsController < ApplicationController
     end
 
     def destroy
-        @admin = Admin.find(params[:id])@admin.delete
+        @admin = Admin.find(params[:id])
+        @admin.delete
         redirect_to '/admins'
     end
 

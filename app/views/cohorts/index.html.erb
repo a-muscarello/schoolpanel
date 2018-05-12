@@ -7,7 +7,7 @@
         <th scope="col">Start Date</th>
         <th scope="col">End Date</th>
         <th scope="col">Instructor Name</th>
-        <th scope="col">Course id</th>
+        <th scope="col">Course Id</th>
     </form>
   </tr>
 </thead>
@@ -16,7 +16,6 @@
   <tr>
     <form>
     <% @cohort.each do |cohort| %>
-    <div>
         <td><%= cohort.name %></td>
         <td><%= cohort.start_date %></td>
         <td><%= cohort.end_date %></td>

@@ -9,16 +9,16 @@ class CoursesController < ApplicationController
         @course = Course.find(params[:id])
     end
 
-    def create
-        Course.create(course_params)
-        redirect_to '/courses'
-    end
-    
     def new
         # Course.new(course[:id])
         @course = Course.new
     end
 
+    def create
+        Course.create(course_params)
+        redirect_to '/courses'
+    end
+    
     def edit
         @course = Course.find(params[:id])
     end
@@ -40,5 +40,5 @@ end
 private
 
     def course_params
-        params.require(:course).permit(:name, :total_in_class_hours)
+        params.require(:course).permit(:name, :total_in_class_hours, :id)
     end

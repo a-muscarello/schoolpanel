@@ -2,7 +2,7 @@
 <table class="table table-striped">
   <thead class="thead-dark">
     <tr>
-      <%= form_for @student do |f| %>
+      <%= form_for @student, remote: true do |f| %>
         <td><%= f.label :first_name %>
         <%= f.text_field :first_name %></td>
         <td><%= f.label :last_name %>

@@ -2,17 +2,22 @@
 <table class="table table-striped">
     <thead class="thead-dark">
         <tr>
-        <%= form_for @instructor do |f| %>
+        <%= form_for @instructor, remote: true do |f| %>
             <tr><td><%= f.label :first_name %></td></tr>
             <tr><td><%= f.text_field :first_name, value: @instructor.first_name %></td></tr>
+
             <tr><td><%= f.label :last_name %></td></tr>
             <tr><td><%= f.text_field :last_name, value: @instructor.last_name %></td></tr>
+
             <tr><td><%= f.label :age %></td></tr>
             <tr><td><%= f.number_field :age, value: @instructor.age %></td></tr>
+
             <tr><td><%= f.label :salary %></td></tr>
             <tr><td><%= f.number_field :salary, value: @instructor.salary %></td></tr>
+
             <tr><td><%= f.label :highest_education %></td></tr>
             <tr><td><%= f.text_field :highest_education, value: @instructor.highest_education %></td></tr>
+            
             <%= f.submit %>
         <% end %>
         </tr>

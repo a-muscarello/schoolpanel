@@ -51,7 +51,7 @@ class HomesController < ApplicationController
 private
 
     def home_params
-        params.require(:home).permit(:first_name, :last_name, :age, :highest_education, :cohort_id)
+        params.require(:home).permit(:first_name, :last_name, :age, :highest_education, :cohort_id, :id)
     end
     
 end

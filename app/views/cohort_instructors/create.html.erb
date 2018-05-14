@@ -1,0 +1,13 @@
+
+
+<table class="table table-striped">
+<thead class="thead-dark">
+    <tr>
+        <%= form_for @cohort_instructor, remote: true do |f| %>
+            <td><%= @cohort_instructor.cohort_id %></td>
+            <td><%= @cohort_instructor.instructor_id %></td>
+            <%= f.submit %>
+        <% end %>
+    </tr>
+    </thead>
+</table>

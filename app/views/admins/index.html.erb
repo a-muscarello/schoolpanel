@@ -5,18 +5,19 @@
         <form>
             <th scope="col">User Name</th>
             <th scope="col">Password</th>
-            </form>
+        </form>
         </tr>
     </thead>
 
     <tbody>
         <tr>
         <form>
-        <% @admin.each do |admin| %>
-            <td><%= admin.user_name %></td>
-            <td><%= admin.password %></td> 
+            <% @admin.each do |admin| %>
+                <td><%= admin.user_name %></td>
+                <td><a class="nav-link" href="/admins/<%= admin.id %>"><%= admin.password %></a></td> 
             </tr>
-        <% end %>
+            <% end %>
         </form> 
     </tbody>
 </table>
+

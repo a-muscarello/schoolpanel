@@ -4,10 +4,12 @@
 
 
 body {
-    background-image: image-url('triangles.png');
+    background-color: #686d74;
+    // background-image: image-url('triangles.png');
     background-size: cover;
     // margin-left: 20px;
     margin-right: 20px;
+    color: white;
 }
 
 .form-signin {
@@ -53,7 +55,11 @@ label {
     border-color: #686d74;
 }
 
-.h3 {
+h3 {
+    color: white;
+}
+
+h2 {
     color: white;
 }
 
@@ -62,3 +68,9 @@ label {
     height: 5px;
 }
 
+.table td, .table th {
+    padding: .75rem;
+    vertical-align: top;
+    border-top: 0px;
+    font-size: 15px;
+}

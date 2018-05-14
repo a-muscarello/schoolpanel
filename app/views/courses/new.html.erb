@@ -1,15 +1,18 @@
 
 
 <table class="table table-striped">
-    <thead class="thead-dark">
+    <thead class="thead-dark">    
         <tr>
-        <%= form_for @course do |f| %>
+        <%= form_for @course, remote: true do |f| %>
             <td><%= f.label :name %>
             <%= f.text_field :name %></td>
+
             <td><%= f.label :total_in_class_hours %>
             <%= f.number_field :total_in_class_hours %></td>
+            
             <%= f.submit %>
         <% end %>
         </tr>
     </thead>
 </table>
+

@@ -1,0 +1,20 @@
+
+
+<table class="table table-striped">
+<thead class="thead-dark">
+    <tr>
+    <%= form_for @cohort_instructor, remote: true do |f| %>
+        <tr><td><%= f.label :cohort_id %></td></tr>
+        <tr><td><%= f.number_field :cohort_id, value: @cohort_instructor.cohort_id %></td></tr>
+
+        <tr><td><%= f.label :instructor_id %></td></tr>
+        <tr><td><%= f.number_field :instructor_id, value: @cohort_instructor.instructor_id %></td></tr>
+        <%= f.submit %>
+    <% end %>
+    </tr>
+</thead>
+</table>
+
+
+
+<%= link_to 'Delete', cohort_instructor_path(@cohort_instructor), remote: true, method: :delete %>

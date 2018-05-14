@@ -10,15 +10,16 @@
   </tr>
 </thead>
 
-<tbody>
-  <tr>
+  <tbody>
+    <tr>
     <form>
-    <% @course.each do |course| %>
-        <td><a class="nav-link" href="/courses"><%= course.name %></a></td>
-        <td><%= course.total_in_class_hours %></td>
-    </tr>
-    <% end %>
+      <% @course.each do |course| %>
+          <td><a class="nav-link" href="/courses/<%= course.id %>"><%= course.name %></a></td>
+          
+          <td><%= course.total_in_class_hours %></td>
+      </tr>
+      <% end %>
     </form>
-</tbody>
+  </tbody>
 </table>    
 

@@ -20,12 +20,12 @@ class StaticPagesController < ApplicationController
     #     else
     #     # Render the main view of goldhat.org
     #     end
-    end
-        
+    # end
+end       
     private
 
     def course_params
-        params.require(:course).permit(:first_name, :last_name, :age, :highest_education, :cohort_id)
+        params.require(:course).permit(:first_name, :last_name, :age, :highest_education, :cohort_id, :id)
     end
 
-end
+

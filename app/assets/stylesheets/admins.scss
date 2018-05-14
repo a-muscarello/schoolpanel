@@ -3,11 +3,13 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 body {
-    background-image: image-url('triangles.png');
+    background-color: #686d74;
+    // background-image: image-url('triangles.png');
     background-size: cover;
     // margin-left: 20px;
     margin-right: 20px;
     margin-top: 20px;
+    color: white;
 }
 
 .form-signin {
@@ -67,6 +69,7 @@ label {
     padding: .75rem;
     vertical-align: top;
     border-top: 0px;
+    font-size: 15px;
 }
 
 .nav-item a {

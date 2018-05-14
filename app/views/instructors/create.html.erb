@@ -2,7 +2,7 @@
 <table class="table table-striped">
 <thead class="thead-dark">
   <tr>
-    <%= form_for @instructor do |f| %>
+    <%= form_for @instructor, remote: true do |f| %>
       <td><%= @instructor.first_name %></td>
       <td><%= @instructor.last_name %></td>
       <td><%= @instructor.age %></td>

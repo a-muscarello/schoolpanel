@@ -1,0 +1,15 @@
+
+
+<table class="table table-striped">
+    <tr>
+    <form action="/user/user_id" method="POST">
+        <tr><td><input type="hidden" name="_method" value="PUT"></td></tr>
+
+        <tr><td><input type="text" name="cohort_id" value="<%= @cohort_instructor.cohort_id %>"></td></tr>
+
+        <tr><td><input type="text" name="instructor_id" value="<%= @cohort_instructor.instructor_id %>"></td></tr>
+        
+        <button type="submit">Update</button>
+    </form>
+    </tr>
+</table>

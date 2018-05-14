@@ -18,7 +18,7 @@
       <form>
       <% @instructor.each do |instructor| %>
           <td><%= instructor.first_name %></td>
-          <td><a class="nav-link" href="/instructors"><%= instructor.last_name %></a></td>
+          <td><a class="nav-link" href="/instructors/<%= instructor.id %>"><%= instructor.last_name %></a></td>
           <td><%= instructor.age %></td>
           <td><%= instructor.salary %></td>
           <td><%= instructor.highest_education %></td>

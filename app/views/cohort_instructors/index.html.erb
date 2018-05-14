@@ -1,0 +1,26 @@
+
+
+<table class="table table-striped">
+<thead class="thead-dark">
+  <tr>
+    <form>
+        <th scope="col">Cohort Id:</th>
+        <th scope="col">Instructor Id</th>
+    </form>
+  </tr>
+</thead>
+
+<tbody>
+  <tr>
+    <form>
+        <% @cohort_instructor.each do |cohort_instructor| %>
+            <td><a class="nav-link" href="/cohort_instructors/<%= cohort_instructor.id %>"><%= cohort_instructor.cohort_id %></a></td>
+            
+            <td><%= cohort_instructor.instructor_id %></td>
+        </tr>  
+        <% end %>
+    </form>
+    </tbody>
+  </table>
+
+  

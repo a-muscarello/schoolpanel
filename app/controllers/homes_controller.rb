@@ -15,7 +15,6 @@ class HomesController < ApplicationController
 
 #     def index
 #         @home = Home.all
-#         render layout: false
 #     end
 
 #     def show

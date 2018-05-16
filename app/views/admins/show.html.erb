@@ -1,11 +1,13 @@
 
-    <p id="notice"><%= notice %></p>
-
-    <p><strong>User Name:</strong><%= @admin.user_name %></p>
-
-    <p><strong>Password:</strong><%= @admin.password %></p>
-
-    <%= link_to 'Edit', edit_admin_path(@admin) %> |
-    <%= link_to 'Back', admin_path %>
-
-
+<table class="table table-striped">
+    <thead class="thead-dark">
+        <tr>
+        <% form_for @admin, remote: true do |f| %>
+            <td>UserName: <%= @admin.user_name %></td>
+            <td>Password: <%= @admin.password %></td>
+            <%= f.submit %>
+        <% end %>
+        </tr>
+    </thead>
+</table>
+    

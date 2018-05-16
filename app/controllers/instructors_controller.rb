@@ -9,8 +9,7 @@ class InstructorsController < ApplicationController
     end
 
     def create
-        @new_instructor = Instructor.create(instructor_params)
-        # Instructor.create(instructor_params)
+        Instructor.create(instructor_params)
         redirect_to '/instructors'
     end
     
@@ -30,7 +29,7 @@ class InstructorsController < ApplicationController
 
     def destroy
         @instructor = Instructor.find(params[:id])
-        @instructor.destroy
+        @instructor.delete
         redirect_to '/instructors'
     end
 end

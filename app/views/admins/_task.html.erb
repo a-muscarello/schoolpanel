@@ -1,8 +1,0 @@
-
-<tr id="admin-<%= admin.id %>">
-<td><%= admin.user_name %></td>
-<td><%= admin.password %></td>
-
-<td><%= link_to 'Edit', edit_admin_path(admin), remote:true %></td>
-<td><%= link_to 'Destroy', admin_path(admin), method: :delete, remote:true, data: { confirm: 'Are you sure?' } %></td>
-</tr>

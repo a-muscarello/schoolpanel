@@ -1,24 +1,22 @@
 
-<table class="table table-striped">
-  <thead class="thead-dark">
-    <tr>
-    <%= form_for @student, remote: true do |f| %>
-      <td><%= @student.first_name %> <%= @student.last_name %></td><tr><td>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</td></tr>
-        
-      <tr><img src="/assets/face.png" /></tr>
-    
-      <tr><td>Age: <%= @student.age %></td></tr>
-      <tr><td>Highest Education: <%= @student.highest_education %></td></tr>
-      <tr><td>Cohort id: <%= @student.cohort_id %></td></tr>
+    <p id="notice"><%= notice %></p>
 
-      <%= f.submit %>
-      <% end %>
-    </tr>
-  </thead>
-</table>
+    <p><strong>First Name:</strong><%= @student.first_name %></p>
 
+    <p><strong>Last Name:</strong><%= @student.last_name %></p>
 
-<%= link_to "Edit", student_path(@student), remote: true, method: :edit %>
-<%= link_to "Delete", student_path(@student), remote: true, method: :delete %>
+    <p><strong>Age:</strong><%= @student.age %></p>
+
+    <p><strong>Highest Education:</strong><%= @student.highest_education %></p>
+
+    <p><strong>Cohort ID:</strong><%= @student.cohort_id %></p>
+
+    <%= link_to 'Edit', edit_student_path(@student) %> 
+       
+  
+    <%= link_to 'Delete', delete_student_path(@student) %>
 
 
+ <%= link_to 'Back', student_path %> 
+
+ 

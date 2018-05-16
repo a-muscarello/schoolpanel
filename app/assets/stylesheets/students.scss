@@ -3,14 +3,22 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
-body {
-    background-color: #686d74;
+html, body {
+    background-color:  #a9abad;
     // background-image: image-url('triangles.png');
     background-size: cover;
-    margin-left: 20px;
-    margin-right: 20px;
     color: white;
+    // overflow-x: hidden;
+    width: 100vw;
 }
+
+// .full-width-borders {
+//     margin: 0 -601.5rem;
+//     padding: 0.25rem 1.5rem;
+//     background: rgb(105, 100, 100);
+//     border-left: 600rem solid rgb(114, 105, 105);
+//     border-right: 600rem solid rgb(133, 126, 126);
+// }
 
 .form-signin {
     margin-top: 50px;
@@ -79,6 +87,7 @@ label {
 
 .navbar {
     color: #3b4c5e;
+    display: block;
 }
 
 td {

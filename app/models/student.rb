@@ -1,5 +1,5 @@
 class Student < ApplicationRecord
-    belongs_to :cohort
+   # belongs_to :cohort, optional:true
     # validates_numericality_of :age, :in => 1..150
 
     # validates :age, numericality: { greater_than: 1, less_than_or_equal_to: 150 } 

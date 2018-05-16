@@ -1,11 +1,5 @@
 
-<table class="table table-striped">
-    <tr>
-        <form action="/user/user_id" method="POST">
-            <tr><td><input type="hidden" name="_method" value="PUT"></td></tr>
-            <tr><td><input type="text" name="user_name" value="<%= @admin.user_name %>"></td></tr>
-            <tr><td><input type="text" name="password" value="<%= @admin.password %>"></td></tr>
-            # <button type="submit">Update</button>
-        </form>
-    </tr>
-</table>
+console.log('I am hitting the js file for update')
+
+$('#edit_admin_<%= @admin.id %>').replaceWith('<%= j render partial: "admin", locals: {admin: @admin} %>');
+

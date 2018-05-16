@@ -1,4 +1,6 @@
 
+<h4>Admin</h4>
+
 <table class="table table-striped">
     <thead class="thead-dark">
         <tr>
@@ -9,15 +11,24 @@
         </tr>
     </thead>
 
-    <tbody>
+    <tbody id="my-admin">
         <tr>
         <form>
             <% @admin.each do |admin| %>
                 <td><%= admin.user_name %></td>
                 <td><a class="nav-link" href="/admins/<%= admin.id %>"><%= admin.password %></a></td> 
+                
+           
             </tr>
             <% end %>
         </form> 
     </tbody>
 </table>
 
+<br>
+
+<%= link_to 'New Entry', new_admin_path, remote: true, id: "ajaxcall" %>
+
+
+<div id="admin-form" style="display:none;">
+</div>

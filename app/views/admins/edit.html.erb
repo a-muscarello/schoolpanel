@@ -1,18 +1,5 @@
 
-<table class="table table-striped">
-    <thead class="thead-dark">  
-        <tr>
-        <%= form_for @admin, remote: true do |f| %>  
-            <tr><td><%= f.label :user_name %></td></tr> 
-            <tr><td><%= f.text_field :user_name, value: @admin.user_name%></td></tr> 
-             
-            <tr><td><%= f.label :password %></td></tr>
-            <tr><td><%= f.text_field :password, value: @admin.password%></td></tr>  
-            <%= f.submit %>
-        <% end %>
-        </tr>
-    </thead>
-</table>
 
+<h1>New Entry</h1>
 
-<%= link_to 'Delete', admin_path(@admin), remote: true, method: :delete %> 
+<%= render 'form', admin: @admin %>

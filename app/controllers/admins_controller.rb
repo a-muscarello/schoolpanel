@@ -2,12 +2,12 @@ class AdminsController < ApplicationController
     # before_filter :authorize_admin, only: [:new, :create, :edit]
     
     # before_action :zero_authors_or_authenticated, only: [:new, :create]
-    before_action :require_login
+    # before_action :require_login
 
     def index
-        current_user.articles
-        # @admin = Admin.all
+        # current_user.articles
         # render layout: false
+        @admin = Admin.all
     end
 
     def show
@@ -19,7 +19,8 @@ class AdminsController < ApplicationController
     end
 
     def create
-        Admin.create(admin_params)
+        @new_task = Admin.create(admin_params)
+        # Admin.create(admin_params)
         redirect_to '/admins'
     end
 
@@ -35,10 +36,10 @@ class AdminsController < ApplicationController
 
     def destroy
         @admin = Admin.find(params[:id])
-        @admin.delete
-        redirect_to '/admins'
+        @admin.destroy
+        # redirect_to '/admins'
     end
-end
+
     # def authorize_admin
     #     return unless !current_user.admin?
     #     redirect_to root_path
@@ -49,3 +50,5 @@ private
     def admin_params
         params.require(:admin).permit(:user_name, :password, :id)
     end
+
+end

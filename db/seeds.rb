@@ -21,12 +21,12 @@ Student.create(first_name: 'Jay', last_name: 'Jones', age: 109, highest_educatio
 
 Course.create(name: 'NYC Web Developement Fellowship', total_in_class_hours: 560)
 Course.create(name: 'Software Engineering Intensive', total_in_class_hours: 560)
-Course.create(name: 'UX Design Intensive, total_in_class_hours: 560)
+Course.create(name: "UX Design Intensive", total_in_class_hours: 560)
 
 
-Cohort.create(name: 'NYC Web Developement Fellowship', start_date: 'Feb 26, 2018', end_date: 'Jun 7, 2018', instructor_name: 'D.Patlut', course_id: 1)
-Cohort.create(name: 'Software Engineering Intensive', start_date: 'Mar 12, 2018', end_date: 'Jun 21, 2018', instructor_name: 'O.Caraballo', course_id: 3)
-Cohort.create(name: 'UX Design Intensive Intensive', start_date: 'Apr 16, 2018', end_date: 'Jul 6, 2018', instructor_name: 'B.Keller', course_id: 2)
+Cohort.create(name: "NYC Web Developement Fellowship", start_date: "Feb 26, 2018", end_date: "Jun 7, 2018", instructor_name: "D.Patlut", course_id: 1)
+Cohort.create(name: "Software Engineering Intensive", start_date: "Mar 12, 2018", end_date: "Jun 21, 2018", instructor_name: "O.Caraballo", course_id: 3)
+Cohort.create(name: "UX Design Intensive Intensive", start_date: "Apr 16, 2018", end_date: "Jul 6, 2018", instructor_name: "B.Keller", course_id: 2)
 
 
 CohortStudent.create(cohort_id: 1, student_id: 6)
@@ -41,15 +41,5 @@ CohortInstructor.create(cohort_id: 2, instructor_id: 42)
 CohortInstructor.create(cohort_id: 3, instructor_id: 43)
 
 
-# Admin.create(user_name: 'admin1', password: 'admin123')
-# Admin.create(user_name: 'tfey', password: 't123')
-# Admin.create(user_name: 'swalker', password: 's123')
-# Admin.create(user_name: 'elee', password: 'e123')
-# Admin.create(user_name: 'clong', password: 'c123')
-# Admin.create(user_name: 'kdeeds', password: 'k123')
-# Admin.create(user_name: 'jjones', password: 'j123')
-# Admin.create(user_name: 'tsawyer', password: 't0123')
-# Admin.create(user_name: 'jdoe', password: 'j0123')
-# Admin.create(user_name: 'lsmith', password: 'l0123')
+Admin.create(user_name: "admin1", password: "admin1")
 
-User.create(email: 'admin1@example.com', password: 'admin1', )

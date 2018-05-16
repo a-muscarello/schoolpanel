@@ -32,7 +32,6 @@ class CohortsController < ApplicationController
         @cohort.delete
         redirect_to '/cohorts'
     end
-end
 
 
 private
@@ -40,3 +39,5 @@ private
     def cohort_params
         params.require(:cohort).permit(:name, :start_date, :end_date, :instructor_name, :course_id, :id)
     end
+    
+end

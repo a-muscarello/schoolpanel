@@ -1,5 +1,4 @@
 
-
 <table class="table table-striped">
 <thead class="thead-dark">
   <tr>
@@ -10,16 +9,19 @@
   </tr>
 </thead>
 
-  <tbody>
-    <tr>
-    <form>
-      <% @course.each do |course| %>
-          <td><a class="nav-link" href="/courses/<%= course.id %>"><%= course.name %></a></td>
-          
-          <td><%= course.total_in_class_hours %></td>
-      </tr>
-      <% end %>
-    </form>
-  </tbody>
+<tbody>
+  <tr>
+  <form>
+    <% @course.each do |course| %>
+        <td><a class="nav-link" href="/courses/<%= course.id %>"><%= course.name %></a></td>
+        
+        <td><%= course.total_in_class_hours %></td>
+      
+        <td><%= link_to "Edit", edit_course_path(course) %></td>
+        <td id="course-<%= course.id %>"><%= link_to "Delete", course_path(course), remote: true, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    </tr>
+    <% end %>
+  </form>
+</tbody>
 </table>    
 

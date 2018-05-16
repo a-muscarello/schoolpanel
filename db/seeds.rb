@@ -6,6 +6,22 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+
+
+
+# Admin.create(user_name: 'admin1', password: 'admin123')
+
+
+User.create(email: 'admin1@example.com', password: 'admin1', )
+
+# This file should contain all the record creation needed to seed the database with its default values.
+# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
+#
+# Examples:
+#
+#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
+#   Character.create(name: 'Luke', movie: movies.first)
+
 Instructor.create(first_name: 'Tom', last_name: 'Sawyer', age: 90, salary: 5000, highest_education: 'College', cohort_id: 1)
 Instructor.create(first_name: 'Jane', last_name: 'Doe', age: 70, salary: 6000, highest_education: 'Masters', cohort_id: 2)
 Instructor.create(first_name: 'Lee', last_name: 'Smith', age: 50, salary: 3000, highest_education: 'PhD', cohort_id: 3)
@@ -41,15 +57,6 @@ CohortInstructor.create(cohort_id: 2, instructor_id: 42)
 CohortInstructor.create(cohort_id: 3, instructor_id: 43)
 
 
-# Admin.create(user_name: 'admin1', password: 'admin123')
-# Admin.create(user_name: 'tfey', password: 't123')
-# Admin.create(user_name: 'swalker', password: 's123')
-# Admin.create(user_name: 'elee', password: 'e123')
-# Admin.create(user_name: 'clong', password: 'c123')
-# Admin.create(user_name: 'kdeeds', password: 'k123')
-# Admin.create(user_name: 'jjones', password: 'j123')
-# Admin.create(user_name: 'tsawyer', password: 't0123')
-# Admin.create(user_name: 'jdoe', password: 'j0123')
-# Admin.create(user_name: 'lsmith', password: 'l0123')
+Admin.create(user_name: 'admin1', password: 'admin1')
 
-User.create(email: 'admin1@example.com', password: 'admin1', )
+

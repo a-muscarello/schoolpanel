@@ -1,29 +1,25 @@
 
-<table class="table table-striped">
-    <thead class="thead-dark">
-        <tr>
-        <%= form_for @cohort, remote: true do |f| %>
-            <tr><td><%= f.label :name %></td></tr>
-            <tr><td><%= f.text_field :name, value: @cohort.name %></td></tr>
-
-            <tr><td><%= f.label :start_date %></td></tr>
-            <tr><td><%= f.text_field :start_date, value: @cohort.start_date %></td></tr>
-
-            <tr><td><%= f.label :end_date %></td></tr>
-            <tr><td><%= f.text_field :end_date, value: @cohort.end_date %></td></tr>
-            
-            <tr><td><%= f.label :instructor_name %></td></tr>
-            <tr><td><%= f.text_field :instructor_name, value: @cohort.instructor_name %></td></tr>
-
-            <tr><td><%= f.label :course_id %></td></tr>
-            <tr><td><%= f.number_field :course_id, value: @cohort.course_id %></td></tr>
-            
-            <%= f.submit %>
-        <% end %>
-        </tr>
-    </thead>
-</table>
+        <%= form_for @cohort do |f| %>
+            <ul>
     
-
-
-<%= link_to 'Delete', cohort_path(@cohort), remote: true, method: :delete %>
+            <li><%= f.label :name %></li>
+            <li><%= f.text_field :name, value: @cohort.name %></li>
+    
+            <li><%= f.label :start_date %></li>
+            <li><%= f.text_field :start_date, value: @cohort.start_date %></li>
+    
+            <li><%= f.label :end_date %></li>
+            <li><%= f.text_field :end_date, value: @cohort.end_date %></li>
+            
+            <li><%= f.label :instructor_name %></li>
+            <li><%= f.text_field :instructor_name, value: @cohort.instructor_name %></li>
+    
+            <li><%= f.label :course_id %></li>
+            <li><%= f.number_field :course_id, value: @cohort.course_id %></li>
+                
+            <%= f.submit %>
+            <% end %>
+            </ul>
+    
+    
+    <%= link_to 'Delete', cohort_path(@cohort), remote: true, method: :delete, data: { confirm: 'Are you sure?' } %>

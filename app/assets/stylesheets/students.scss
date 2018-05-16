@@ -3,13 +3,27 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 
+// Place all the styles related to the admins controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+// Place all the styles related to the instructors controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
 body {
-    background-color: #686d74;
+    background-color:  #a9abad;
     // background-image: image-url('triangles.png');
     background-size: cover;
-    margin-left: 20px;
+    // margin-left: 20px;
     margin-right: 20px;
     color: white;
+}
+
+ul {
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
 }
 
 .form-signin {
@@ -56,9 +70,8 @@ label {
 }
 
 .h3 {
-    color: white;
+    color: black;
 }
-
 
 .table {
     color: #272a2c;
@@ -82,7 +95,7 @@ label {
 }
 
 td {
-    color: white;
+    color: black;
 }
 
 img {

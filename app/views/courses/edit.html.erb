@@ -1,18 +1,16 @@
 
-<table class="table table-striped">
-    <thead class="thead-dark">
-    <tr>
-        <%= form_for @course, remote: true do |f| %>
-            <tr><td><%= f.label :name %></td></tr>
-            <tr><td><%= f.text_field :name, value: @course.name %></td></tr>
+        <%= form_for @course do |f| %>
+            <ul>
+            
+            <li><%= f.label :name %></li>
+            <li><%= f.text_field :name, value: @course.name %></li>
 
-            <tr><td><%= f.label :total_in_class_hours %></td></tr>
-            <tr><td><%= f.number_field :total_in_class_hours, value: @course.total_in_class_hours %></td></tr>
+            <li><%= f.label :total_in_class_hours %></li>
+            <li><%= f.number_field :total_in_class_hours, value: @course.total_in_class_hours %></li>
             
             <%= f.submit %>
         <% end %>
-    </tr>
-    </thead>
-</table>
+    </ul>
+    
 
-<%= link_to 'Delete', course_path(@course), remote: true, method: :delete %>
+<%= link_to 'Delete', course_path(@course), remote: true, method: :delete, data: { confirm: 'Are you sure?' } %>

@@ -1,16 +1,17 @@
 
 <table class="table table-striped">
-  <thead class="thead-dark">
-    <tr>
-    <%= form_for @admin, remote: true do |f| %>
-      <td><%= f.label :user_name %>
-      <%= f.text_field :user_name %></td>
-      <td><%= f.label :password %>
-      <%= f.text_field :password %></td>
-      <%= f.submit %>
-    <% end %>
-    </tr>
-  </thead>
+<thead class="thead-dark">
+  <tr>
+  <%= form_for @admin, remote: true do |f| %>
+    <td><%= f.label :user_name %>
+    <%= f.text_field :user_name %></td>
+    
+    <td><%= f.label :password %>
+    <%= f.text_field :password %></td>
+    <%= f.submit %>
+  <% end %>
+  </tr>
+</thead>
 </table>
 
 

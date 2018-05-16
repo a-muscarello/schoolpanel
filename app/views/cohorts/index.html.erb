@@ -21,10 +21,11 @@
         <td><%= cohort.end_date %></td>
         <td><%= cohort.instructor_name %></td>
         <td><%= cohort.course_id %></td>
+
+        <td><%= link_to "Edit", edit_cohort_path(cohort) %></td>
+        <td id="cohort-<%= cohort.id %>"><%= link_to "Delete", cohort_path(cohort), remote: true, method: :delete, data: { confirm: 'Are you sure?' } %></td>
         </tr>  
       <% end %>
     </form>
   </tbody>
 </table>
-
-  

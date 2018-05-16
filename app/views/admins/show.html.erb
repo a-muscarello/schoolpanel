@@ -1,13 +1,14 @@
 
 <table class="table table-striped">
-    <thead class="thead-dark">
-        <tr>
-        <% form_for @admin, remote: true do |f| %>
-            <td>UserName: <%= @admin.user_name %></td>
-            <td>Password: <%= @admin.password %></td>
-            <%= f.submit %>
-        <% end %>
-        </tr>
-    </thead>
+<thead class="thead-dark">
+    <tr>
+        <td><%= @admin.user_name %></td>
+        <td>Password: <%= @admin.password %></td>
+       
+    </tr>
+</thead>
 </table>
-    
+
+
+<%= link_to "Edit", edit_admin_path(@admin) %>
+<%= link_to "Delete", admin_path(@admin), remote: true, method: :delete %>

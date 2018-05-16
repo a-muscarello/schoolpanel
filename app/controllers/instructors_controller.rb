@@ -1,7 +1,6 @@
 class InstructorsController < ApplicationController
     def index
         @instructor = Instructor.all
-        # render layout: false
     end
 
     def show
@@ -32,10 +31,12 @@ class InstructorsController < ApplicationController
         @instructor.delete
         redirect_to '/instructors'
     end
-end
+
 
 private
 
     def instructor_params
         params.require(:instructor).permit(:first_name, :last_name, :age, :salary, :highest_education, :cohort_id, :id)
     end
+    
+end

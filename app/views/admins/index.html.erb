@@ -1,23 +1,30 @@
 
 <table class="table table-striped">
-    <thead class="thead-dark">
-        <tr>
-        <form>
-            <th scope="col">User Name</th>
-            <th scope="col">Password</th>
-        </form>
-        </tr>
-    </thead>
+<thead class="thead-dark">
+    <tr>
+    <form>
+        <th scope="col">User Name</th>
+        <th scope="col">Password</th>
+    </form>
+    </tr>
+</thead>
 
-    <tbody>
-        <tr>
-        <form>
-            <% @admin.each do |admin| %>
-                <td><%= admin.user_name %></td>
-                <td><a class="nav-link" href="/admins/<%= admin.id %>"><%= admin.password %></a></td> 
-            </tr>
-            <% end %>
-        </form> 
-    </tbody>
+<tbody>
+    <tr>
+    <form>
+        <% @admin.each do |admin| %>
+            <td><%= admin.user_name %></td>
+            <td><a class="nav-link" href="/admins/<%= admin.id %>"><%= admin.password %></a></td> 
+            
+            <td><%= link_to "Edit", edit_admin_path(admin) %></td>
+            <td id="admin-<%= admin.id %>"><%= link_to "Delete", admin_path(admin), remote: true, method: :delete %></td>
+        </tr>
+        <% end %>
+    </form> 
+</tbody>
 </table>
 
+<br>
+
+
+<%#<%= link_to 'New Item', new_admin_path, remote: true, id: "ajaxcall" %>%>

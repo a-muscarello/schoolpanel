@@ -1,7 +1,6 @@
 class StudentsController < ApplicationController
     def index
         @student = Student.all
-        # render layout: false
     end
 
     def show
@@ -32,7 +31,6 @@ class StudentsController < ApplicationController
         @student.delete
         redirect_to '/students'
     end
-end
 
 private
 
@@ -40,3 +38,4 @@ private
         params.require(:student).permit(:first_name, :last_name, :age, :highest_education, :cohort_id, :id)
     end
     
+end

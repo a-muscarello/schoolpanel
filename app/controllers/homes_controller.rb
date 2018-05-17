@@ -1,7 +1,5 @@
 class HomesController < ApplicationController
 
-    # skip_before_action :authenticate_user!
-
     # before_action :check_auth
 
     # def check_auth

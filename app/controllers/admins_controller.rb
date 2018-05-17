@@ -2,7 +2,7 @@ class AdminsController < ApplicationController
     # before_filter :authorize_admin, only: [:new, :create, :edit]
     
     # before_action :zero_authors_or_authenticated, only: [:new, :create]
-    before_action :require_login
+    # before_action :require_login
 
     def index
         # current_user.articles

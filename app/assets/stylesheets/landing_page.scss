@@ -16,8 +16,9 @@ body {
     // background-image: image-url('triangles.png');
     background-size: cover;
     // margin-left: 20px;
-    margin-right: 20px;
-    color: white;
+    margin: auto;
+    width: auto;
+    height: auto;
 }
 
 ul {
@@ -90,8 +91,16 @@ label {
     justify-content: space-between;
 }
 
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
 .navbar {
-    color: #3b4c5e;
+	align-items: justify;
+    background-color: rgb(92, 134, 118); 
+    margin-bottom: 20px;
 }
 
 td {

@@ -6,17 +6,16 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-body {
-    background-color:  #a9abad;
-    // background-image: image-url('triangles.png');
+html, body {
+    /* background-image: image-url('triangles.png'); */
     background-size: cover;
-    // margin-left: 20px;
-    margin-right: 20px;
-    color: white;
+    margin: auto;
+    width: auto;
+    height: auto;
 }
 
 ul {
-    list-style-type:none;
+    list-style-type: none;
     margin: 0;
     padding: 0;
 }
@@ -31,6 +30,10 @@ label {
     color: white;
 }
 
+bg-dark {
+    background-color: #5aa78f;
+}
+
 .form-control {
     display: block;
     text-align: center;
@@ -40,7 +43,7 @@ label {
     padding: .375rem .75rem;
     font-size: 1rem;
     line-height: 1.5;
-    color: #495057;
+    color: #3aa581;
     background-color: #fff;
     background-clip: padding-box;
     border: 1px solid #ced4da;
@@ -69,7 +72,7 @@ label {
 }
 
 .table {
-    color: #272a2c;
+    color: #3ea88e;
     height: 5px;
 }
 
@@ -83,10 +86,27 @@ label {
 .nav-item a {
     display: inline-block;
     justify-content: space-between;
+    color: #fff;
+}
+
+.container-fluid {
+    width: 100%;
+    margin: 0 auto;
 }
 
 .navbar {
-    color: #3b4c5e;
+	align-items: justify;
+    background-color: rgb(92, 134, 118); 
+    margin-bottom: 20px;
+}
+
+.navbar right {
+    justify-content: right;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
 }
 
 td {

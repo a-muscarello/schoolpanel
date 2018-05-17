@@ -13,9 +13,7 @@
  *= require_tree .
  *= require_self
 
- *= require reset
- *= require flexboxgrid
- *= require custom 
+
  */
  /* *= require admins.scss */
 

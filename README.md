@@ -32,3 +32,5 @@ Work scope: Created wireframe for the layout. Pseudo coded the necessary steps r
 Features: Bootstrap layout.
 
 Acknowledgements: ActiveRecord Bootstrap w3schools 
+
+

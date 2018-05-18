@@ -11,18 +11,21 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-html, body {
-    /* background-image: image-url('triangles.png'); */
+body {
+    background-color: #a9abad;
+    // background-image: image-url('triangles.png');
     background-size: cover;
-    margin: auto;
-    width: auto;
-    height: auto;
+    // margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    color: white;
 }
 
 ul {
-    list-style-type: none;
+    list-style-type:none;
     margin: 0;
     padding: 0;
+    color: black;
 }
 
 .form-signin {
@@ -35,10 +38,6 @@ label {
     color: white;
 }
 
-bg-dark {
-    background-color: #5aa78f;
-}
-
 .form-control {
     display: block;
     text-align: center;
@@ -48,7 +47,7 @@ bg-dark {
     padding: .375rem .75rem;
     font-size: 1rem;
     line-height: 1.5;
-    color: #3aa581;
+    color: #495057;
     background-color: #fff;
     background-clip: padding-box;
     border: 1px solid #ced4da;
@@ -68,7 +67,7 @@ bg-dark {
 
 .btn-primary {
     color: #fff;
-    background-color: #509ea8;
+    background-color: #272a2c;
     border-color: #686d74;
 }
 
@@ -77,9 +76,10 @@ bg-dark {
 }
 
 .table {
-    color: #3ea88e;
+    color: #272a2c;
     height: 5px;
 }
+
 
 .table td, .table th {
     padding: .75rem;
@@ -91,34 +91,140 @@ bg-dark {
 .nav-item a {
     display: inline-block;
     justify-content: space-between;
-    color: #fff;
-}
-
-.container-fluid {
-    width: 100%;
-    margin: 0 auto;
 }
 
 .navbar {
-	align-items: justify;
-    background-color: rgb(92, 134, 118); 
-    margin-bottom: 20px;
+    color: #3b4c5e;
+}
+
+td {
+    color:black;
 }
 
 .navbar right {
     justify-content: right;
 }
 
-a {
-    color: #fff;
-    text-decoration: none;
-}
 
-img {
-    height: 150px;
-    width: 150px;
-}
 
-.thead {
-    background-color: #5aa78f;
-}
+
+
+// body {
+//     /* background-image: image-url('triangles.png'); */
+//     background-size: cover;
+//     margin: auto;
+//     width: auto;
+//     height: auto;
+// }
+
+// ul {
+//     list-style-type: none;
+//     margin: 0;
+//     padding: 0;
+//     color: black;
+// }
+
+// .form-signin {
+//     margin-top: 50px;
+//     text-align: center;
+// }
+
+// label {
+//     margin-top: 5px;
+//     // color: white;
+// }
+
+// // bg-dark {
+// //     background-color: rgb(92, 134, 118);
+// // }
+
+// .form-control {
+//     display: block;
+//     text-align: center;
+//     margin-left: 425px;
+//     margin-top: 10px;
+//     width: 30%;
+//     padding: .375rem .75rem;
+//     font-size: 1rem;
+//     line-height: 1.5;
+//     color: black;
+//     // background-color: #fff;
+//     background-clip: padding-box;
+//     border: 1px solid #ced4da;
+//     border-radius: .25rem;
+//     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+// }
+
+// .btn-lg {
+//     display: inline-block;
+//     padding: 1rem;
+//     font-size: 1.25rem;
+//     line-height: 1rem;
+//     border-radius: .3rem;
+//     width: 30%;
+//     align-items: center;
+// }
+
+// .btn-primary {
+//     // color: #fff;
+//     // background-color: #272a2c;
+//     // border-color: #686d74;
+//     background-color:rgb(92, 134, 118);
+// }
+
+// .h3 {
+//     color: black;
+// }
+
+// .table {
+//     color: rgb(92, 134, 118);
+//     // color: #272a2c;
+//     height: 5px;
+// }
+
+// .table td, .table th {
+//     padding: .75rem;
+//     vertical-align: top;
+//     border-top: 0px;
+//     font-size: 15px;
+// }
+
+// .nav-item a {
+//     display: inline-block;
+//     justify-content: space-between;
+//     // color: #fff;
+// }
+
+// .container-fluid {
+//     width: 100%;
+//     margin: 0 auto;
+// }
+
+// .navbar {
+// 	align-items: justify;
+//     background-color: rgb(92, 134, 118); 
+//     // color: #3b4c5e;
+//     // margin-bottom: 20px;
+// }
+
+// .navbar right {
+//     justify-content: right;
+// }
+
+// a {
+//     // color: #fff;
+//     text-decoration: none;
+// }
+
+// img {
+//     height: 150px;
+//     width: 150px;
+// }
+
+// .thead {
+//     background-color: rgb(92, 134, 118);
+// }
+
+// td {
+//     color: black;
+// }

@@ -12,7 +12,7 @@
 # Admin.create(user_name: 'admin1', password: 'admin123')
 
 
-User.create(email: 'admin1@example.com', password: 'admin1', )
+# User.create(email: 'admin1@example.com', password: 'admin1', )
 
 # This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
@@ -37,7 +37,7 @@ Student.create(first_name: 'Jay', last_name: 'Jones', age: 109, highest_educatio
 
 Course.create(name: 'NYC Web Developement Fellowship', total_in_class_hours: 560)
 Course.create(name: 'Software Engineering Intensive', total_in_class_hours: 560)
-Course.create(name: 'UX Design Intensive, total_in_class_hours: 560)
+Course.create(name: 'UX Design Intensive', total_in_class_hours: 560)
 
 
 Cohort.create(name: 'NYC Web Developement Fellowship', start_date: 'Feb 26, 2018', end_date: 'Jun 7, 2018', instructor_name: 'D.Patlut', course_id: 1)

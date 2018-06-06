@@ -2,7 +2,7 @@
 <table class="table table-striped">
 <thead class="thead-dark">
     <tr>
-    <%= form_for @cohort, remote: true do |f| %>
+    <%= form_for @cohort do |f| %>
         <td><%= f.label :name %>
         <%= f.text_field :name %></td>
 
@@ -22,3 +22,4 @@
     </tr>
 </thead>
 </table>
+

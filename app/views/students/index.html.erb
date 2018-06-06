@@ -23,6 +23,7 @@
             <td><%= student.cohort_id %></td>
             
             <td><%= link_to "Edit", edit_student_path(student) %></td>
+            <td><%= link_to "Create", edit_student_path(student) %></td>
             <td id="student-<%= student.id %>"><%= link_to "Delete", student_path(student), remote: true, method: :delete, data: { confirm: 'Are you sure?' } %></td>
           </tr> 
           <% end %>
@@ -30,3 +31,4 @@
   </tbody>
 </table>
 
+<td><%= link_to "Create", new_student_path %></td>

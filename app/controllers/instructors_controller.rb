@@ -8,7 +8,7 @@ class InstructorsController < ApplicationController
     end
 
     def create
-        Instructor.create(instructor_params)
+        @instructor = Instructor.create(instructor_params)
         redirect_to '/instructors'
     end
     

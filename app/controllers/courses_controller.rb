@@ -15,7 +15,7 @@ class CoursesController < ApplicationController
     end
 
     def create
-        Course.create(course_params)
+        @course = Course.create(course_params)
         redirect_to '/courses'
     end
     

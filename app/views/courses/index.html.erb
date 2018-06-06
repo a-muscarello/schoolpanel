@@ -18,6 +18,7 @@
         <td><%= course.total_in_class_hours %></td>
       
         <td><%= link_to "Edit", edit_course_path(course) %></td>
+        <td><%= link_to "Create", edit_course_path(course) %></td>
         <td id="course-<%= course.id %>"><%= link_to "Delete", course_path(course), remote: true, method: :delete, data: { confirm: 'Are you sure?' } %></td>
     </tr>
     <% end %>
@@ -25,3 +26,4 @@
 </tbody>
 </table>    
 
+<td><%= link_to "Create", new_course_path %></td>
